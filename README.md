@@ -15,3 +15,5 @@ npm run dev
 #or
 yarn dev
 ```
+
+The server would run on [text](http://localhost:3000)

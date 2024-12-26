@@ -25,6 +25,5 @@ admin.site.index_title = "Welcome to LocalHive Portal"
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('home.urls')),
-    path('create/', include('create.urls'))
+    path('', include('events.urls'))
 ]

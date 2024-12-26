@@ -10,5 +10,13 @@
     <a href="/create">
         <button type="button">Create +</button>
     </a>
+
+    <p>List of events:</p>
+    {% for event in events %}
+    <p>{{forloop.counter}}. {{event}}</p>
+    <p>{{event.sport}}</p>
+    <p>{{event.location}}</p>
+    <p>{{event.date}}</p>
+    {% endfor %}
 {% endblock body %}
     

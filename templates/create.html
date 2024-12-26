@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Create your event
+{% endblock title %}
+
+{% block body %}
+    <h1>Create your own event</h1>
+    <form action="/create/" method="POST">
+        {% csrf_token %}
+
+        <label for="eventName">Name of Event:</label>
+        <input type="text" id="eventName" name="eventName" required><br><br>
+
+        <label for="sport">Sport:</label>
+        <input type="text" id="sport" name="sport" required><br><br>
+
+        <label for="desc">Description:</label>
+        <textarea id="desc" name="desc" required></textarea><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+{% endblock body %}

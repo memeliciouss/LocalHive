@@ -11,9 +11,7 @@ git clone https://github.com/memeliciouss/LocalHive.git
 Then, run the development server:
 
 ```bash
-npm run dev
-#or
-yarn dev
+python manage.py runserver
 ```
 
-The server would run on [https://localhost:3000](http://localhost:3000)
+The server would run on [https://localhost:8000](http://localhost:8000)

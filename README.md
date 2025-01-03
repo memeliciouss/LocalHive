@@ -14,4 +14,4 @@ Then, run the development server:
 python manage.py runserver
 ```
 
-The server would run on [https://localhost:8000](http://localhost:8000)
+The server would run on [https://localhost:3000](http://localhost:3000)
